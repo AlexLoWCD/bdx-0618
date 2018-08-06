@@ -1,0 +1,34 @@
+.Panier {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-align: left;
+    border: 1px solid #555;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.Panier .title {
+    padding: 5px 10px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.Panier .ArticlePanier {
+    margin: 10px 0;
+    padding: 10px 5px;
+}
+
+.Panier .ArticlePanier:not(.last-child) {
+    border-bottom: 1px solid black;
+}
+
+.Panier .total-panier {
+    padding: 10px 5px;
+    text-align: right;
+}
+
+.Panier .total-panier.hidden {
+    display: none;
+}

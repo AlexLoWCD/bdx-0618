@@ -1,0 +1,61 @@
+.PageAccueil {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden; }
+  .PageAccueil .photos {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: -8%;
+    width: 116%;
+    height: 100%;
+    overflow: hidden; }
+    .PageAccueil .photos .photo {
+      position: relative;
+      flex-grow: 1;
+      top: -10%;
+      height: 120%;
+      transform: rotate(13deg);
+      overflow: hidden; }
+      .PageAccueil .photos .photo .image,
+      .PageAccueil .photos .photo .fog {
+        left: -40%;
+        width: 180%;
+        transform: rotate(-13deg); }
+      .PageAccueil .photos .photo .image {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat; }
+  .PageAccueil .content {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 3; }
+    .PageAccueil .content .tile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 350px;
+      height: 150px;
+      margin: 20px 0;
+      border: 1px solid black;
+      border-radius: 5px;
+      background-color: rgba(0, 0, 0, 0.9);
+      font-weight: bold;
+      font-size: 24px;
+      text-align: center;
+      color: white;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+      user-select: none; }
+      .PageAccueil .content .tile:hover {
+        background-color: rgba(37, 37, 37, 0.8); }
+      .PageAccueil .content .tile:active {
+        background-color: rgba(37, 37, 37, 0.8);
+        box-shadow: inset 1px 1px 6px rgba(255, 255, 255, 0.8), 2px 2px 8px rgba(0, 0, 0, 0.4); }

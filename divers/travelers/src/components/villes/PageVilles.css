@@ -1,0 +1,6 @@
+.PageVilles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .PageVilles .Ville {
+    margin: 10px 15%; }
